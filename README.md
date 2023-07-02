@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Solution](https://www.frontendmentor.io/solutions/todoapp-CQAX6lwb2j)
+- Solution URL: [FrontEnd Solution](https://www.frontendmentor.io/solutions/ecommerceproductpage-2tkoebD8C3)
 - Live Site URL: [Live Site](https://lozocz.github.io/E-commerce-product-page/)
 
 ## My process
