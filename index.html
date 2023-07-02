@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="javascript/index.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/c4587b3804.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-head">
+      <div class="logo-n-options-wrapper">
+        <a href="#"
+          ><img src="images/logo.svg" alt="main-logo" class="main-logo"
+        /></a>
+        <div class="options-wrapper">
+          <button class="btn side-bar-btn">
+            <i class="fa-solid fa-bars side-bar"></i>
+          </button>
+          <ul class="option-list" data-checked="false">
+            <button class="close-side-bar-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li class="bar-option"><a href="#">Colletions</a></li>
+            <li class="bar-option"><a href="#">Men</a></li>
+            <li class="bar-option"><a href="#">Women</a></li>
+            <li class="bar-option"><a href="#">About</a></li>
+            <li class="bar-option"><a href="#">Contact</a></li>
+          </ul>
+          <span class="backdrop-element"></span>
+        </div>
+      </div>
+      <div class="cart-n-profile">
+        <div class="cart-n-btn-wrapper">
+          <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping product-cart"></i>
+            <span class="cart-item"></span>
+          </button>
+          <div class="cart-wrapper" data-checked="false">
+            <h3 class="cart-title">Cart</h3>
+            <div class="cart-inside">
+              <p class="empty-cart-text">Your cart is empty</p>
+            </div>
+          </div>
+        </div>
+        <img src="images/image-avatar.png" alt="prof-pic" class="prof-image" />
+      </div>
+    </header>
+    <main class="main-cont">
+      <section class="product-preview-sect">
+        <div class="main-image-wrapper">
+          <img
+            src="images/image-product-1.jpg"
+            alt="main-product-pic"
+            class="main-product-image"
+          />
+          <span class="arrow-box arrow-left"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></span>
+          <span class="arrow-box arrow-right"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </div>
+        <dialog class="slider-dialog">
+          <button class="dialog-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="dialog-main-img-wrapper">
+            <img
+              src="images/image-product-1.jpg"
+              alt="main-product-pic"
+              class="dialog-product-image"
+            />
+            <span class="dialog-arrow-box dialog-arrow-left"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></span>
+            <span class="dialog-arrow-box dialog-arrow-right"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </div>
+          <div class="dialog-thumbnails-wrapper">
+            <div
+              class="dialog-thumbnail-wrapper dialog-thumb1"
+              data-checked="true"
+              data-index="1"
+            >
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="product-thumbnail"
+                class="dialog-product-thumbnail"
+              />
+            </div>
+            <div
+              class="dialog-thumbnail-wrapper dialog-thumb2"
+              data-checked="false"
+              data-index="2"
+            >
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="product-thumbnail"
+                class="dialog-product-thumbnail"
+              />
+            </div>
+            <div
+              class="dialog-thumbnail-wrapper dialog-thumb3"
+              data-checked="false"
+              data-index="3"
+            >
+              <img
+                src="images/image-product-3-thumbnail.jpg"
+                alt="product-thumbnail"
+                class="dialog-product-thumbnail"
+              />
+            </div>
+            <div
+              class="dialog-thumbnail-wrapper dialog-thumb4"
+              data-checked="false"
+              data-index="4"
+            >
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt="product-thumbnail"
+                class="dialog-product-thumbnail"
+              />
+            </div>
+          </div>
+        </dialog>
+
+        <div class="product-thumbnails-wrapper">
+          <div class="thumbnail-wrapper thumb1" data-checked="true">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt="product-thumbnail"
+              class="product-thumbnail"
+            />
+          </div>
+          <div class="thumbnail-wrapper thumb2" data-checked="false">
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt="product-thumbnail"
+              class="product-thumbnail"
+            />
+          </div>
+          <div class="thumbnail-wrapper thumb3" data-checked="false">
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt="product-thumbnail"
+              class="product-thumbnail"
+            />
+          </div>
+          <div class="thumbnail-wrapper thumb4" data-checked="false">
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt="product-thumbnail"
+              class="product-thumbnail"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="product-info-sect">
+        <p class="product-eyebrow-text">SNEAKER COMPANY</p>
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <p class="text-bout-product">
+          These low-profile sneakers are your perfect casual wear company.
+          Featuring a durable rubber outer sole, they`ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-wrapper">
+          <h1 class="product-main-price">$125.00</h1>
+          <p class="product-old-price">$250.00</p>
+        </div>
+        <div class="btns-wrapper">
+          <div class="number-box">
+            <button class="minus-btn btn-small">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <p class="product-number"></p>
+            <button class="plus-btn btn-small">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button class="buy-btn btn">
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">M. <i>Lozo</i> Czernik</a>.
+    </div> -->
+  </body>
+</html>
